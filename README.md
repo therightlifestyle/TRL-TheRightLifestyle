@@ -3,7 +3,7 @@
 > **The Operating System for Ambition.** Turn goals into execution.
 > This repository is the **flagship HQ** of TRL — the canonical home that unifies everything built across our ecosystem.
 
-[![Live Site](https://img.shields.io/badge/Live-TRL_Flagship_HQ-2563EB?style=for-the-badge)](https://therightlifestyle.com/)
+[![Live Site](https://img.shields.io/badge/Live-TRL_Flagship_HQ-2563EB?style=for-the-badge)](https://therightlifestyle.github.io/TRL-TheRightLifestyle/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Direct-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923190091457)
 [![Community](https://img.shields.io/badge/Community-Join_Builders-7C3AED?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
@@ -30,6 +30,7 @@ TRL helps ambitious people and businesses **Learn faster, Build smarter, Automat
 - [Proof-first honesty standard](#-proof-first-honesty-standard)
 - [Tech principles](#-tech-principles)
 - [This repo: contents & roadmap](#-this-repo-contents--roadmap)
+- [Deploy & hosting](#-deploy--hosting)
 - [Quickstart](#-quickstart)
 - [Status: building in public](#-status-building-in-public)
 - [Founder](#-founder)
@@ -81,7 +82,7 @@ One brand. Connected layers. Each repo has one job:
 
 | Layer | Repo | Live site | Role | Status |
 |-------|------|-----------|------|--------|
-| 🏛️ **Flagship HQ** | `TRL-The-Right-Lfestyle` *(this repo)* | [Live](https://therightlifestyle.com/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
+| 🏛️ **Flagship HQ** | `TRL-TheRightLifestyle` *(this repo)* | [Live](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
 | ⚙️ **Service Engine** | [`The-Right-Lifetsyle`](https://github.com/therightlifestyle/The-Right-Lifetsyle) | [Live](https://therightlifestyle.github.io/The-Right-Lifetsyle/) | 3-tier automation sales + order system, execution pack | ✅ Available |
 | 🧠 **OS Vision + Catalog** | [`TRL-1`](https://github.com/therightlifestyle/TRL-1) | [Live](https://therightlifestyle.github.io/TRL-1/) | 6-layer OS architecture, 23 services, Focus tool | ✅ Available |
 | 🔍 **Audit Funnel** | [`TRL-Site`](https://github.com/therightlifestyle/TRL-Site) | [Live](https://therightlifestyle.github.io/TRL-Site/) | $35 Micro Audit entry point, honesty-first pages | ✅ Available |
@@ -264,27 +265,49 @@ Every TRL site follows the same discipline — **fast, honest, dependency-free:*
 
 ## 📁 This repo: contents & roadmap
 
-**Today** — this PR establishes the flagship README (you're reading it).
+**Shipped** — the flagship is live on GitHub Pages at **https://therightlifestyle.github.io/TRL-TheRightLifestyle/** (no custom domain required).
 
 **Next** (the upgrade path for this repo):
 
-- [x] 🏛️ Flagship README — mission, offers, pricing, standards, ecosystem map *(this PR)*
-- [ ] 🏠 Flagship `index.html` — one canonical landing page uniting the best sections of all repos
-- [ ] 🎨 Shared design system (`style.css`) — TRL black + electric-blue identity, mobile-first
-- [ ] ⚡ Interactive layer (`script.js`) — quote helper, currency toggle, smooth UX — zero dependencies
-- [ ] 📄 Trust pages — `about.html`, `privacy.html`, `404.html`, `sitemap.xml`, `robots.txt`
-- [ ] 🚀 GitHub Pages deploy + custom domain (`therightlifestyle.com`)
+- [x] 🏛️ Flagship README — mission, offers, pricing, standards, ecosystem map
+- [x] 🏠 Flagship `index.html` — one canonical landing page uniting the best sections of all repos
+- [x] 🎨 Shared design system (`style.css`) — TRL black + electric-blue identity, mobile-first
+- [x] ⚡ Interactive layer (`script.js`) — quote helper, currency toggle, smooth UX — zero dependencies
+- [x] 📄 Trust pages — `about.html`, `privacy.html`, `404.html`, `sitemap.xml`, `robots.txt`
+- [x] 🚀 GitHub Pages deploy — live on the default `github.io` URL, zero cost, zero DNS setup
 - [ ] 📊 Proof wall — first real case studies replace placeholder stats
+- [ ] 🌐 Custom domain — *only if/when a real domain is bought* (see [Deploy](#-deploy--hosting))
 
 ```text
-TRL-The-Right-Lfestyle/          # Flagship HQ (this repo)
+TRL-TheRightLifestyle/          # Flagship HQ (this repo)
 ├── README.md                    # ← you are here: the canonical TRL story
-├── index.html                   # Flagship landing page (next PR)
-├── style.css / script.js        # Shared design system + interactions (next PR)
-├── about.html / privacy.html    # Trust pages (next PR)
-├── sitemap.xml / robots.txt     # SEO foundations (next PR)
-└── LICENSE                      # MIT (next PR)
+├── index.html                   # Flagship landing page
+├── style.css / script.js        # Shared design system + interactions
+├── about.html / privacy.html    # Trust pages (+ 404.html)
+├── sitemap.xml / robots.txt     # SEO foundations
+└── LICENSE                      # MIT (no CNAME — default github.io hosting)
 ```
+
+---
+
+## 🚀 Deploy & hosting
+
+The flagship is hosted **free on GitHub Pages** — no domain to buy, no DNS to configure, nothing manual.
+
+| Setting | Value |
+|---------|-------|
+| **Live URL** | https://therightlifestyle.github.io/TRL-TheRightLifestyle/ |
+| **Source** | `main` branch, `/` (root) |
+| **Custom domain** | None — `CNAME` file removed so the `github.io` URL serves directly |
+| **HTTPS** | Enforced (free GitHub certificate) |
+| **Rebuilds** | Automatic on every push to `main` (~1 min) |
+
+**How it works:** the repo is plain static HTML/CSS/JS, so GitHub Pages serves
+`index.html` from the repo root at the URL above. No build step, no CI, no cost.
+
+**Adding a domain later (optional):** buy a domain → add it under *Settings → Pages → Custom domain*
+→ create a `CNAME` file with that domain → point DNS (`A` records to GitHub's IPs, or a `CNAME`
+record for `www`) — then update the canonical URL, `sitemap.xml`, and `robots.txt` back to the new domain.
 
 ---
 
@@ -304,8 +327,8 @@ TRL-The-Right-Lfestyle/          # Flagship HQ (this repo)
 **For developers** — run this repo locally:
 
 ```bash
-git clone https://github.com/therightlifestyle/TRL-The-Right-Lfestyle.git
-cd TRL-The-Right-Lfestyle
+git clone https://github.com/therightlifestyle/TRL-TheRightLifestyle.git
+cd TRL-TheRightLifestyle
 python3 -m http.server 8080      # then open http://localhost:8080/
 # …or just open index.html in a browser. No build step. No dependencies.
 ```
@@ -378,7 +401,7 @@ MIT — see [LICENSE](LICENSE) *(landing with the next PR alongside the flagship
 
 ## 🔗 Quick links
 
-- 🏛️ [Flagship HQ](https://therightlifestyle.com/) · ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
+- 🏛️ [Flagship HQ](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) · ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
 - 💬 [WhatsApp](https://wa.me/923190091457) · 👥 [Community](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL) · 📸 [Instagram](https://instagram.com/the.right.lifestyle)
 
 ---

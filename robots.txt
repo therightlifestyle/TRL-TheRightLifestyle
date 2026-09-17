@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://therightlifestyle.com/sitemap.xml
+Sitemap: https://therightlifestyle.github.io/TRL-TheRightLifestyle/sitemap.xml
