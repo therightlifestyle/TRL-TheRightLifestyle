@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About TRL — The Right Lifestyle</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta name="description" content="About TRL — founder-led, founder-built. Who we are, what we believe, and how we work." />
 </head>
 <body>
@@ -14,7 +15,7 @@
       <a href="index.html" class="brand" aria-label="TRL Home">
         <span class="brand-mark" aria-hidden="true">TR</span><span>The Right Lifestyle</span>
       </a>
-      <nav aria-label="Primary" class="nav-links">
+      <nav aria-label="Primary" class="nav-links" id="nav">
         <a href="index.html">Home</a>
         <a href="index.html#today">Today</a>
         <a href="index.html#offers">Offers</a>
@@ -23,6 +24,9 @@
         <a href="index.html#contact">Contact</a>
         <a href="index.html#contact" class="cta-small">Get a quote</a>
       </nav>
+      <button class="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-controls="nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </header>
 
@@ -48,8 +52,9 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <a href="index.html" class="brand" aria-label="TRL Home"><span class="brand-mark">TR</span><span>The Right Lifestyle</span></a>
-      <p>© 2026 TRL. MIT License. Building in public.</p>
+      <p><a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · © 2026 TRL. Building in public.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

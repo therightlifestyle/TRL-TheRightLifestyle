@@ -21,21 +21,12 @@
   // ------------------------------------------------------------------
   // Close mobile nav on link click
   // ------------------------------------------------------------------
-  nav.querySelectorAll('a').forEach(link => {
+  if (nav) nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
       btn.setAttribute('aria-expanded', 'false');
     });
   });
-
-  // ------------------------------------------------------------------
-  // Currency toggle: show both USD and PKR labels dynamically
-  // ------------------------------------------------------------------
-  const currencyToggle = document.getElementById('currency-toggle');
-  if (currencyToggle) {
-    // Already embedded; no extra toggle needed unless we inject one.
-    // For future: if we inject a toggle, it would swap text nodes.
-  }
 
   // ------------------------------------------------------------------
   // Quote helper — simple interactive card for quick estimate
@@ -96,7 +87,18 @@
       const label = labels[category] || 'Service';
       const noteText = notes ? '\nNotes: ' + notes : '';
       const message = `Hi Rashid — I would like a quote for: ${label}.${noteText}\nCan we discuss scope and timeline?`;
-      output.innerHTML = `<strong>Copy this into WhatsApp:</strong><br><br><code style="background: var(--surface); padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid var(--border); word-break: break-word; display: inline-block;">${message.replace(/\n/g, '<br>')}</code><br><br><a href="https://wa.me/923190091457?text=${encodeURIComponent(message)}" class="btn-primary" style="margin-top: 0.75rem; display: inline-block;">Open WhatsApp with this message →</a>`;
+      // Build the result with DOM nodes so user-entered notes are never interpreted as HTML.
+      output.replaceChildren();
+      const heading = document.createElement('strong');
+      heading.textContent = 'Copy this into WhatsApp:';
+      const preview = document.createElement('code');
+      preview.className = 'quote-preview';
+      preview.textContent = message;
+      const whatsappLink = document.createElement('a');
+      whatsappLink.href = `https://wa.me/923190091457?text=${encodeURIComponent(message)}`;
+      whatsappLink.className = 'btn-primary quote-link';
+      whatsappLink.textContent = 'Open WhatsApp with this message →';
+      output.append(heading, document.createElement('br'), document.createElement('br'), preview, document.createElement('br'), document.createElement('br'), whatsappLink);
       output.style.display = 'block';
       output.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
