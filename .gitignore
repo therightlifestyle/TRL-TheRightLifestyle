@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------
+# TRL flagship — static site, no build step (see docs/TRL_DECISIONS.md D-002).
+# Keep the repo free of secrets, OS noise, and editor droppings.
+# ---------------------------------------------------------------
+
+# --- Secrets: never commit. Rotate first if one ever lands. ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Linux ---
+*~
+.fuse_hidden*
+.Trash-*
+
+# --- Editors & IDEs ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.bak
+npm-debug.log*
+
+# --- Local tooling (no build step today; guard anyway) ---
+node_modules/
+.cache/
+dist/
+.parcel-cache/
+
+# --- Local preview servers / scratch ---
+.python-version
+__pycache__/
