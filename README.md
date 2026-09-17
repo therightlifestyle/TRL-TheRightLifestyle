@@ -3,7 +3,7 @@
 > **The Operating System for Ambition.** Turn goals into execution.
 > This repository is the **flagship HQ** of TRL — the canonical home that unifies everything built across our ecosystem.
 
-[![Live Site](https://img.shields.io/badge/Live-TRL_Flagship_HQ-2563EB?style=for-the-badge)](https://therightlifestyle.github.io/TRL-The-Right-Lfestyle/)
+[![Live Site](https://img.shields.io/badge/Live-TRL_Flagship_HQ-2563EB?style=for-the-badge)](https://therightlifestyle.com/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Direct-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923190091457)
 [![Community](https://img.shields.io/badge/Community-Join_Builders-7C3AED?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
@@ -81,7 +81,7 @@ One brand. Connected layers. Each repo has one job:
 
 | Layer | Repo | Live site | Role | Status |
 |-------|------|-----------|------|--------|
-| 🏛️ **Flagship HQ** | `TRL-The-Right-Lfestyle` *(this repo)* | [Live](https://therightlifestyle.github.io/TRL-The-Right-Lfestyle/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
+| 🏛️ **Flagship HQ** | `TRL-The-Right-Lfestyle` *(this repo)* | [Live](https://therightlifestyle.com/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
 | ⚙️ **Service Engine** | [`The-Right-Lifetsyle`](https://github.com/therightlifestyle/The-Right-Lifetsyle) | [Live](https://therightlifestyle.github.io/The-Right-Lifetsyle/) | 3-tier automation sales + order system, execution pack | ✅ Available |
 | 🧠 **OS Vision + Catalog** | [`TRL-1`](https://github.com/therightlifestyle/TRL-1) | [Live](https://therightlifestyle.github.io/TRL-1/) | 6-layer OS architecture, 23 services, Focus tool | ✅ Available |
 | 🔍 **Audit Funnel** | [`TRL-Site`](https://github.com/therightlifestyle/TRL-Site) | [Live](https://therightlifestyle.github.io/TRL-Site/) | $35 Micro Audit entry point, honesty-first pages | ✅ Available |
@@ -378,7 +378,7 @@ MIT — see [LICENSE](LICENSE) *(landing with the next PR alongside the flagship
 
 ## 🔗 Quick links
 
-- 🏛️ [Flagship HQ](https://therightlifestyle.github.io/TRL-The-Right-Lfestyle/) · ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
+- 🏛️ [Flagship HQ](https://therightlifestyle.com/) · ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
 - 💬 [WhatsApp](https://wa.me/923190091457) · 👥 [Community](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL) · 📸 [Instagram](https://instagram.com/the.right.lifestyle)
 
 ---
