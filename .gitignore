@@ -1,0 +1,37 @@
+# ---------------------------------------------------------
+# TRL flagship — static site, no build step.
+# Keep the repo free of OS noise, editor droppings, logs.
+# ---------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# Editors & IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+
+# Local tooling (if ever introduced)
+node_modules/

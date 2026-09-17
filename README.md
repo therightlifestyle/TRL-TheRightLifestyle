@@ -272,20 +272,21 @@ Every TRL site follows the same discipline — **fast, honest, dependency-free:*
 - [x] 🏛️ Flagship README — mission, offers, pricing, standards, ecosystem map
 - [x] 🏠 Flagship `index.html` — one canonical landing page uniting the best sections of all repos
 - [x] 🎨 Shared design system (`style.css`) — TRL black + electric-blue identity, mobile-first
-- [x] ⚡ Interactive layer (`script.js`) — quote helper, currency toggle, smooth UX — zero dependencies
+- [x] ⚡ Interactive layer (`script.js`) — quick-quote helper, mobile nav, smooth UX — zero dependencies
 - [x] 📄 Trust pages — `about.html`, `privacy.html`, `404.html`, `sitemap.xml`, `robots.txt`
 - [x] 🚀 GitHub Pages deploy — live on the default `github.io` URL, zero cost, zero DNS setup
 - [ ] 📊 Proof wall — first real case studies replace placeholder stats
 - [ ] 🌐 Custom domain — *only if/when a real domain is bought* (see [Deploy](#-deploy--hosting))
 
 ```text
-TRL-TheRightLifestyle/          # Flagship HQ (this repo)
-├── README.md                    # ← you are here: the canonical TRL story
-├── index.html                   # Flagship landing page
-├── style.css / script.js        # Shared design system + interactions
-├── about.html / privacy.html    # Trust pages (+ 404.html)
-├── sitemap.xml / robots.txt     # SEO foundations
-└── LICENSE                      # MIT (no CNAME — default github.io hosting)
+TRL-TheRightLifestyle/           # Flagship HQ (this repo)
+├── README.md                     # ← you are here: the canonical TRL story
+├── index.html                    # Flagship landing page (incl. quick-quote helper)
+├── style.css / script.js         # Shared design system + interactions
+├── about.html / privacy.html     # Trust pages (+ 404.html)
+├── sitemap.xml / robots.txt      # SEO foundations
+├── .gitignore / .editorconfig / .gitattributes   # Repo hygiene
+└── LICENSE                       # MIT (no CNAME — default github.io hosting)
 ```
 
 ---
@@ -395,7 +396,7 @@ Found a typo, a broken link, or a claim that outruns reality? That's a high-prio
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE) *(landing with the next PR alongside the flagship site)*.
+MIT — see [LICENSE](LICENSE).
 
 ---
 

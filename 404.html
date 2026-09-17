@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 — Page not found | TRL</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -23,18 +27,18 @@
     </div>
   </header>
 
-  <main id="main" style="padding-top: calc(var(--space-xl) * 1.2); padding-bottom: calc(var(--space-xl) * 1.2); text-align: center;">
+  <main id="main" class="page-main page-main--center">
     <div class="container-narrow">
-      <span class="section-label" aria-hidden="true">404</span>
-      <h1 style="font-size: clamp(3rem, 12vw, 7rem); line-height: 1.05; letter-spacing: -0.06em;">Not here.</h1>
-      <p style="font-size: 1.1rem; max-width: 480px; margin: 1rem auto 2rem;">This page isn't live — and neither is anything we haven't actually built. If you're looking for the Micro Audit, the service catalog, or the vision, head back to the flagship.</p>
+      <span class="section-label">404</span>
+      <h1 class="display-404">Not here.</h1>
+      <p class="lead-center">This page isn't live — and neither is anything we haven't actually built. If you're looking for the Micro Audit, the service catalog, or the vision, head back to the flagship.</p>
       <a href="index.html" class="btn-primary">Back to flagship →</a>
     </div>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <a href="index.html" class="brand"><span class="brand-mark">TR</span><span>The Right Lifestyle</span></a>
+      <a href="index.html" class="brand" aria-label="TRL Home"><span class="brand-mark" aria-hidden="true">TR</span><span>The Right Lifestyle</span></a>
       <p><a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · © 2026 TRL. Building in public.</p>
     </div>
   </footer>
