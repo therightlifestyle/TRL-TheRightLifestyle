@@ -574,9 +574,9 @@ body.no-scroll { overflow: hidden; }
 .flow-name { font-size: 0.87rem; font-weight: 600; }
 .flow-desc { font-size: 0.74rem; color: var(--text-3); }
 .flow-tag { margin-left: auto; font-family: var(--font-mono); font-size: 0.64rem; color: var(--accent-2); border: 1px solid var(--border); border-radius: var(--r-full); padding: 0.15rem 0.5rem; white-space: nowrap; }
-.flow-rail { position: absolute; left: 1.75rem; top: 3.6rem; bottom: 3.6rem; width: 1px; background: linear-gradient(180deg, var(--accent), var(--accent-2), transparent); opacity: 0.5; }
+.flow-rail { position: absolute; left: 0.7rem; top: 2rem; bottom: 2rem; width: 1px; background: linear-gradient(180deg, transparent, var(--accent), var(--accent-2), transparent); opacity: 0.55; }
 .flow-pulse {
-  position: absolute; left: 1.75rem; width: 6px; height: 6px; margin-left: -2.5px; border-radius: 50%;
+  position: absolute; left: 0.7rem; width: 6px; height: 6px; margin-left: -2.5px; border-radius: 50%;
   background: var(--accent-2); box-shadow: 0 0 12px 3px var(--glow-2); animation: rail 4.5s linear infinite;
 }
 .float-card {
@@ -963,6 +963,15 @@ body[data-currency="pkr"] .svc-price .swap-pkr { font-family: var(--font-display
 }
 .toast.show { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 
+.tier-chip {
+  display: grid; gap: 0.1rem; padding: 0.7rem 0.6rem; text-align: center;
+  border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--surface);
+  transition: border-color var(--dur-2) var(--ease), transform var(--dur-2) var(--ease);
+}
+.tier-chip:hover { border-color: var(--border-2); transform: translateY(-2px); }
+.tier-chip span { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); }
+.tier-chip strong { font-family: var(--font-display); font-size: 1.02rem; letter-spacing: -0.02em; color: var(--text); }
+
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
 .contact-card { display: grid; gap: 0.45rem; padding: 1.4rem; border-radius: var(--r-md); border: 1px solid var(--border); background: var(--card-sheen); transition: transform var(--dur-2) var(--ease), border-color var(--dur-2) var(--ease); }
 .contact-card:hover { transform: translateY(-4px); border-color: var(--border-2); }
@@ -1058,7 +1067,7 @@ body[data-currency="pkr"] .svc-price .swap-pkr { font-family: var(--font-display
 @keyframes hue-slide { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 @keyframes ping { 0% { box-shadow: 0 0 0 0 currentColor; opacity: 1; } 70% { box-shadow: 0 0 0 7px transparent; opacity: 0.85; } 100% { box-shadow: 0 0 0 0 transparent; opacity: 1; } }
 @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@keyframes rail { 0% { top: 3.6rem; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 3.6rem); opacity: 0; } }
+@keyframes rail { 0% { top: 2rem; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 2rem); opacity: 0; } }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @keyframes rotate-words {
   0% { opacity: 0; transform: translateY(102%); }
