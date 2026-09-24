@@ -1,7 +1,7 @@
 {
-  "name": "TRL \u2014 The Right Lifestyle",
+  "name": "TRL — The Right Lifestyle",
   "short_name": "TRL",
-  "description": "The Operating System for Ambition \u2014 AI automation, digital services and systems that give you your time back.",
+  "description": "AI automation, custom agents and business operating systems that give owners their time back.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

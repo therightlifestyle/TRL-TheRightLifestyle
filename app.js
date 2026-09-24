@@ -306,17 +306,23 @@
     function build() {
       var need = checks('need');
       var lines = [];
-      lines.push('Hi Rashid — TRL brief:');
+      lines.push('Hi Rashid — TRL project brief:');
       lines.push('');
       lines.push('NAME: ' + (val('name') || '—'));
       lines.push('BUSINESS: ' + (val('business') || '—'));
+      var industry = val('industry');
+      if (industry) { lines.push('WHAT THEY DO: ' + industry); }
       lines.push('NEEDS: ' + (need.length ? need.join(', ') : '—'));
+      var bottleneck = val('bottleneck');
+      if (bottleneck) { lines.push('BIGGEST TIME WASTE: ' + bottleneck); }
+      var leads = val('leads');
+      if (leads) { lines.push('LEAD SOURCES: ' + leads); }
+      var tools = val('tools');
+      if (tools) { lines.push('CURRENT TOOLS: ' + tools); }
       lines.push('BUDGET: ' + (val('budget') || '—'));
       lines.push('TIMELINE: ' + (val('timeline') || '—'));
       var notes = val('notes');
-      if (notes) { lines.push(''); lines.push('CONTEXT: ' + notes); }
-      var brief = val('brief');
-      if (brief) { lines.push(''); lines.push('GOAL: ' + brief); }
+      if (notes) { lines.push(''); lines.push('ADDITIONAL CONTEXT: ' + notes); }
       lines.push('');
       lines.push('Please confirm scope, price and ETA in writing before we start.');
       return lines.join('\n');
