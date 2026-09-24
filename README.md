@@ -19,45 +19,82 @@ TRL helps ambitious people and businesses **Learn faster, Build smarter, Automat
 
 ## 📖 Contents
 
-- [Why this repo exists](#-why-this-repo-exists)
+- [What's in this repo](#-whats-in-this-repo)
+- [The website](#-the-website)
 - [Mission](#-mission)
-- [The TRL ecosystem at a glance](#-the-trl-ecosystem-at-a-glance)
-- [What you can do with TRL today](#-what-you-can-do-with-trl-today)
-- [Pricing overview](#-pricing-overview)
-- [How working with TRL works](#-how-working-with-trl-works)
-- [The TRL OS vision](#-the-trl-os-vision)
+- [Founder — Rashid Muhammad](#-founder--rashid-muhammad)
+- [Services: six practices, 23 offerings](#-services-six-practices-23-offerings)
+- [How services are described](#-how-services-are-described)
+- [Pricing — complete list](#-pricing--complete-list)
 - [The TRL Standard](#-the-trl-standard)
 - [Proof-first honesty standard](#-proof-first-honesty-standard)
+- [How working with TRL works](#-how-working-with-trl-works)
+- [The TRL OS vision](#-the-trl-os-vision)
+- [The TRL ecosystem at a glance](#-the-trl-ecosystem-at-a-glance)
 - [Tech principles](#-tech-principles)
-- [This repo: contents & roadmap](#-this-repo-contents--roadmap)
+- [Design system](#-design-system)
 - [Deploy & hosting](#-deploy--hosting)
 - [Quickstart](#-quickstart)
 - [Status: building in public](#-status-building-in-public)
-- [Founder](#-founder)
 - [Contact](#-contact)
 - [Contributing](#-contributing)
 - [License](#-license)
 
 ---
 
-## 🎯 Why this repo exists
+## 📁 What's in this repo
 
-TRL grew fast — across several repos, each proving a different piece:
+A dependency-free static site. No frameworks, no build step, no npm install.
 
-| Repo | What it proved |
-|------|----------------|
-| [The-Right-Lifetsyle](https://github.com/therightlifestyle/The-Right-Lifetsyle) | Service Engine V2 — 3-tier done-for-you AI automation, TRL Standard, 30-day execution system |
-| [TRL-1](https://github.com/therightlifestyle/TRL-1) | Full OS architecture, 23-service catalog, browser-local Focus tool, WhatsApp brief builder |
-| [TRL-Site](https://github.com/therightlifestyle/TRL-Site) | Honesty-first marketing — the $35 Micro Audit funnel, zero fake claims |
-| [TRL-DIGITAL-SERVICES](https://github.com/therightlifestyle/TRL-DIGITAL-SERVICES) | Service-delivery layer — filterable catalog, estimate wizard → WhatsApp quote |
-
-**This repo is the final mission: one flagship home.** It consolidates the mission, the offers, the standards, and the roadmap into a single canonical README, website, and brand — so visitors, clients, and builders never have to guess where TRL lives.
-
-> **A note on the name:** the repository slug keeps its original spelling for URL stability. The brand is — and always will be — **The Right Lifestyle**.
+```text
+TRL-TheRightLifestyle/
+├── index.html                  # Flagship landing: hero, offers, pricing, standards, founder, FAQ, brief builder
+├── services.html               # Full catalog: 3 automation tiers, 23 services, websites, learning, process
+├── pricing.html                # Every price in one place + currency switch + full offers table
+├── founder.html                # Rashid Muhammad: what he does, the story, values, the build
+├── about.html                  # Mission, values, TRL Standard, honesty rules, ecosystem, roadmap
+├── contact.html                # Channels + 30-second brief builder → WhatsApp
+├── privacy.html                # Privacy by architecture (no analytics, no trackers, no cookies)
+├── 404.html                    # Honest 404
+├── style.css                   # Hand-written design system (dark + light, motion, responsive)
+├── app.js                      # Theme, reveals, filters, brief wizard, currency switch, counters
+├── favicon.svg                 # Brand mark
+├── assets/                     # og-cover.jpg, icon-192/512, apple-touch-icon, maskable icon
+├── manifest.webmanifest        # Installable web app metadata
+├── sitemap.xml / robots.txt    # SEO foundations
+├── README.md                   # ← you are here
+└── LICENSE                     # MIT
+```
 
 ---
 
-## 🌍 Mission
+## 🌐 The website
+
+The flagship has grown from a single landing page into a complete, eight-page site with its own design system.
+
+| Page | Job | Highlights |
+|------|-----|-----------|
+| **index.html** | The pitch | Animated hero with a live automation-flow visual, stat strip, service marquee, six practices, pricing teaser, 5-step timeline, TRL Standard, founder block, brief builder, FAQ |
+| **services.html** | The catalog | 3 automation tiers + Builder Setup + Founder OS, all 23 services in a filterable/searchable grid, website packages, learning & tasks, process, guarantees |
+| **pricing.html** | The numbers | USD/PKR currency switch, 4 core packages, add-ons, the complete offers table, guaranteeing each price is the same one quoted on WhatsApp |
+| **founder.html** | The human | What Rashid actually does, the founder story (2021 → beyond), the values, what he's building next |
+| **about.html** | The company | Vision/mission/promise, values, the TRL Standard, proof-first honesty panel, ecosystem map, roadmap and live status board |
+| **contact.html** | The conversion | Six contact channels + a 30-second brief builder that compiles a clean WhatsApp message |
+| **privacy.html** | The trust | What we collect, what never leaves your browser, and the three third parties we honestly use |
+| **404.html** | The character | "Not here. — and neither is anything we haven't actually built." |
+
+**Interactive layer (all vanilla, all local):**
+
+- 🌗 **Theme engine** — dark by default, remembers your choice, respects system preference
+- 💱 **Currency emphasis switch** — USD-led or PKR-led; both currencies always visible
+- 🔎 **Filter + search** across all 23 services (category chips + instant text search)
+- 🧾 **Brief builder** — compiles your answers into a formatted WhatsApp message; runs entirely in the browser
+- ✨ **Motion system** — scroll reveals, aurora background drift, cursor glow, card spotlights, animated counters, scroll-progress bar, timeline progress, tilt cards
+- ♿ **Accessible** — skip link, focus-visible rings, ARIA states, keyboard-first nav, `prefers-reduced-motion` honoured, full content works with JavaScript disabled
+
+---
+
+## 🎯 Mission
 
 > **Bridge the gap between ambition and execution.**
 
@@ -76,89 +113,168 @@ TRL doesn't answer this with another app. **It answers with a complete operating
 
 ---
 
-## 🗺️ The TRL ecosystem at a glance
+## 👤 Founder — Rashid Muhammad
 
-One brand. Connected layers. Each repo has one job:
+**Founder, TRL — The Right Lifestyle.** Rawalpindi, Pakistan 🇵🇰 → building toward Dubai → the world 🌍.
 
-| Layer | Repo | Live site | Role | Status |
-|-------|------|-----------|------|--------|
-| 🏛️ **Flagship HQ** | `TRL-TheRightLifestyle` *(this repo)* | [Live](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
-| ⚙️ **Service Engine** | [`The-Right-Lifetsyle`](https://github.com/therightlifestyle/The-Right-Lifetsyle) | [Live](https://therightlifestyle.github.io/The-Right-Lifetsyle/) | 3-tier automation sales + order system, execution pack | ✅ Available |
-| 🧠 **OS Vision + Catalog** | [`TRL-1`](https://github.com/therightlifestyle/TRL-1) | [Live](https://therightlifestyle.github.io/TRL-1/) | 6-layer OS architecture, 23 services, Focus tool | ✅ Available |
-| 🔍 **Audit Funnel** | [`TRL-Site`](https://github.com/therightlifestyle/TRL-Site) | [Live](https://therightlifestyle.github.io/TRL-Site/) | $35 Micro Audit entry point, honesty-first pages | ✅ Available |
-| 🛎️ **Digital Services** | [`TRL-DIGITAL-SERVICES`](https://github.com/therightlifestyle/TRL-DIGITAL-SERVICES) | [Live](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/) | Filterable catalog + estimate wizard → WhatsApp | ✅ Available |
-| 🖥️ **Unified HQ (alt)** | [`TRL`](https://github.com/therightlifestyle/TRL) | [Live](https://therightlifestyle.github.io/TRL/) | Unified site + optional Node API foundation | ✅ Available |
-| 📊 **Lead Workspace** | [`TRL-OS`](https://github.com/therightlifestyle/TRL-OS) | [Live](https://therightlifestyle.github.io/TRL-OS/) | Local-first lead/pipeline workspace (Lead OS) | ✅ Available |
-| 🌱 **Phase 1 Archive** | [`TRL-WEB-PHASE-1`](https://github.com/therightlifestyle/TRL-WEB-PHASE-1) | [Live](https://therightlifestyle.github.io/TRL-WEB-PHASE-1/) | Original proof-engine site (history) | 📦 Archive |
+> *"The gap between ambition and execution is the problem worth solving."*
 
----
+Founder-led, start to finish: **the person you talk to is the person who does the work and owns the outcome.** No handoffs to juniors, no account layers, no ticket queue. Rashid scopes every engagement, builds the systems and reviews every delivery by hand — and runs TRL's own pipeline on the systems TRL sells.
 
-## ✅ What you can do with TRL today
+| Role | Detail |
+|------|--------|
+| **Discipline** | Scopes the work, builds the systems, reviews every delivery |
+| **Reach** | One WhatsApp number · ~1 hour average reply · English & اردو |
+| **Principle** | Written scopes, checklists and completion reports — no verbal promises |
+| **Accountability** | TRL delivers with its own hands or manages a vetted partner — accountability never moves |
 
-No vaporware. Everything below is **orderable right now** through WhatsApp:
+**The story:** walked away from competitive gaming in 2021, rebuilt from zero through 2022–23 (discipline, mindset, AI, business, sales, systems), founded TRL in 2024, built the OS architecture and ecosystem through 2025, and opened the TRL AI Growth System to founding clients in 2026. **No Plan B. Just faith — and the discipline to show up on the days it isn't fun.**
 
-### 🔍 Start small — the Micro Audit
-- **$35 / PKR 9,900** · 5 written deliverables · 3–5 business days
-- Finds exactly where your enquiries leak — and what to fix first
-- Delivered late past day 5? **The $35 is refunded.** Deliverables stay yours either way
-- 👉 [Start with the audit](https://therightlifestyle.github.io/TRL-Site/audit.html)
-
-### 🤖 Done-for-you AI automation
-- Lead capture → CRM → auto follow-up, AI support agents on your docs, workflow automation, dashboards
-- **Starter / Growth OS / Premium Scale** tiers (see pricing) — human-reviewed, on-time guaranteed
-- 👉 [Explore the Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/#services)
-
-### 🛎️ 23+ productized services, one catalog
-Six practices, searchable in one place:
-
-1. **AI & Automation** — agents, chatbots, CRM + follow-up sequences
-2. **Business Systems** — booking, dashboards, integrations, workflow analysis
-3. **Web & Design** — websites, branding, SEO, social setup
-4. **Content & Growth** — content engines, outreach, lead systems
-5. **Business Documents** — proposals, SOPs, investor-ready paperwork
-6. **Learning & Tasks** — tutoring, mentorship, AI training, freelance task work
-- 👉 [Browse all services](https://therightlifestyle.github.io/TRL-1/services.html) · [Build an instant quote](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/#estimate)
-
-### 🧘 Free tools you can use now
-- **TRL Focus** — private, browser-local daily execution (priorities, habits, reflections). No account, no cloud, data never leaves your browser
-- **Lead OS** — local-first pipeline workspace: leads, follow-ups, daily loop, automations
-- 👉 [Open Focus](https://therightlifestyle.github.io/TRL-1/focus.html)
-
-### 👥 Join the builders
-- A growing network of entrepreneurs, creators, and operators across **PK → Dubai → Global**
-- Daily AI + business tactics, networking, direct founder access
-- 👉 [Join the WhatsApp community](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL)
+📧 [rashidmuhammadamir@gmail.com](mailto:rashidmuhammadamir@gmail.com) · 💬 [WhatsApp +92 319 0091457](https://wa.me/923190091457) · 📸 [@the.right.lifestyle](https://instagram.com/the.right.lifestyle)
 
 ---
 
-## 💰 Pricing overview
+## 🛎️ Services: six practices, 23 offerings
 
-**Pakistan-first pricing. Honest, starting-at rates — every project is scoped precisely before work begins.**
+Everything is delivered by TRL or supervised by TRL. One point of contact, one standard, one written scope.
 
-| Offer | Price | Best for |
-|-------|-------|----------|
-| 🔍 Micro Audit | **$35 / PKR 9,900** one-time | Seeing exactly what's broken before spending more |
-| ⚙️ Automation — Starter | **$299 / PKR 84,000** one-time | Testing automation: 1 workflow, 1–3 days |
-| 🚀 Automation — Growth OS | **$799 / PKR 224,000** one-time | Growing teams: up to 4 automations + CRM, 3–7 days |
-| 🏢 Automation — Premium Scale | **$1,999 / PKR 560,000** one-time | Full operating system, multi-channel, 7–14 days |
-| 🌐 Websites | from **$50** (landing) · **$150** (business) · **$200+** (custom) | Launching or upgrading your presence |
-| 🤖 AI Consultation & Training | **$10 / $50 / $150+** | Prompts, assistants, team implementation |
-| 🎓 Tutoring & Mentorship | **$10–$30/hr** (online / 1-on-1 / in-person) | Skills, business, AI coaching |
-| ⚡ Freelance tasks | **$5 / $20 / $50+** (micro / standard / complex) | Content, design, video, research |
-| 🏗️ Builder Automation Setup | **$499** (after audit, when it's a fit) | Your first real system |
-| 👑 Founder OS / Transformation | **$1,297+** (after earlier proof) | Full transformation |
+### 1 · AI & Automation
+Custom AI systems that handle follow-ups, responses, lead qualification and daily operations — running in the background of your business.
+
+- **Done-for-you automation tiers** — Starter ($299), Growth OS ($799), Premium Scale ($1,999)
+- **WhatsApp lead automation** — from $75 · lead capture + follow-up flow, fewer missed handoffs
+- **Email system setup** — from $60 · outreach/follow-up with tracking and human handoff points
+- **Workflow automation setup** — from $50 · one manual process mapped, triggered, notified, reported
+- **AI assistant setup** — from $150 · an assistant grounded in your approved materials
+- **Builder Automation Setup** — $499 · your first real end-to-end system (after the audit)
+- **Founder OS / Transformation** — $1,297+ · the full transformation (after earlier proof)
+
+### 2 · Websites & Design
+Presence that looks like the real thing.
+
+- **Websites** — Landing **$50** · Business **$150** · Custom **$200+** (HTML, WordPress or Shopify)
+- **AI-assisted logo design** — from $15 · three directions, delivery-ready files
+- **Brand identity kit** — from $45 · logo, colour, typography, guidelines, collateral
+- **Poster / flyer design** — from $10 · digital + print-ready
+- **Social media design pack** — from $20 · ten posts or story layouts
+
+### 3 · Business Systems
+The plumbing that stops work from leaking.
+
+- **Business idea validation** — from $20 · ten opportunity directions built on your real constraints
+- **Market research report** — from $35 · competitors, demand, pricing, risk signals
+- **Business plan** — from $80 · problem → customer → model → execution → financial thinking
+- **Go-to-market strategy** — from $60 · positioning, offer, channels, first customers
+
+### 4 · Content & Growth
+Stay visible without becoming a content machine.
+
+- **Social media captions** — from $5 · ten platform-ready captions with hooks and CTAs
+- **SEO blog writing** — from $15 · researched 800–1,200-word articles
+- **Product descriptions** — from $10 · ten conversion-focused descriptions
+- **Short-form video scripts** — from $12 · five Reels/TikTok scripts built to earn attention
+
+### 5 · Business Documents
+Paperwork that looks like you mean it.
+
+- **Company profile** — from $40 · eight pages, presentation-ready
+- **Presentation deck** — from $35 · ten-slide narrative
+- **Proposal template** — from $25 · reusable sales structure
+- **Business templates pack** — from $30 · onboarding, KPIs, SOPs, reviews, handoffs
+
+### 6 · Learning & Tasks
+Skills, coaching, and the small jobs that eat your week.
+
+- **AI Consultation & Training** — **$10 / $50 / $150+** · prompts, assistants, team implementation
+- **Tutoring & Mentorship** — **$10–$30/hr** · online $10 · 1-on-1 $20 · in-person $30
+- **30-day learning plan** — from $15 · **Career roadmap** — from $25 · **Productivity system** — from $30
+- **Freelance tasks** — **$5 / $20 / $50+** · content, design, video, research, small automations
+
+> Full detail, filters and one-tap WhatsApp briefs: **[services.html](https://therightlifestyle.github.io/TRL-TheRightLifestyle/services.html)**
+
+---
+
+## 🧾 How services are described
+
+Every service on the site is described the same way — the format matters as much as the price:
+
+| Field | What it tells you |
+|-------|-------------------|
+| **Practice** | Which of the six categories it belongs to |
+| **Deliverable** | The concrete thing that lands in your inbox (10 captions, an 8-page profile, a working automation) |
+| **Time** | Realistic ETA — 24 hours for small tasks, 3–5 days for an audit, 1–14 days for automation tiers |
+| **Starting price** | USD, with approximate PKR guidance at ₨280/1$ on smaller items |
+| **Tier structure** | Where applicable: Basic / Advanced / Premium, Starter / Growth / Complete, Online / 1-on-1 / In-person |
+| **What we need from you** | Content, access or approvals required before the clock starts |
+
+No mystery bundles, no "contact us for pricing" on services that have a price.
+
+---
+
+## 💰 Pricing — complete list
+
+**Pakistan-first pricing. Honest starting-at rates — every project is scoped precisely before work begins.**
+
+| Offer | Price | Best for | Delivery |
+|-------|-------|----------|----------|
+| 🔍 **Micro Audit** | **$35 / PKR 9,900** | Seeing exactly what's broken before spending more | 3–5 business days |
+| ⚙️ **Automation — Starter** | **$299 / PKR 84,000** | Testing automation: 1 workflow | 1–3 days |
+| 🚀 **Automation — Growth OS** | **$799 / PKR 224,000** | Growing teams: up to 4 automations + CRM | 3–7 days |
+| 🏢 **Automation — Premium Scale** | **$1,999 / PKR 560,000** | Full operating system, multi-channel | 7–14 days |
+| 🌐 **Websites** | from **$50** / $150 / $200+ | Launching or upgrading your presence | 2–7 days |
+| 🤖 **AI Consultation & Training** | **$10 / $50 / $150+** | Prompts, assistants, team implementation | 1–5 days |
+| 🎓 **Tutoring & Mentorship** | **$10–$30 / hr** | Skills, business, AI coaching | per session |
+| ⚡ **Freelance tasks** | **$5 / $20 / $50+** | Content, design, video, research | 24–72 hours |
+| 🏗️ **Builder Automation Setup** | **$499** *(after audit)* | Your first real system | 3–7 days |
+| 👑 **Founder OS / Transformation** | **$1,297+** *(after proof)* | Full transformation | custom |
 
 > Custom packages, bulk orders, and **founding-client rates** on request.
 > Payments: bank transfer · JazzCash / Easypaisa (PK) · PayPal / Stripe / Wise (global).
 > Every quote is confirmed on WhatsApp before work starts — **no fake checkouts, ever.**
 
-📩 **Get a scoped quote in minutes:** [WhatsApp +92 319 0091457](https://wa.me/923190091457) · [Estimate wizard](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/#estimate)
+📩 **Get a scoped quote in minutes:** [WhatsApp +92 319 0091457](https://wa.me/923190091457) · [Brief builder](https://therightlifestyle.github.io/TRL-TheRightLifestyle/contact.html#brief)
+
+---
+
+## 🛡️ The TRL Standard
+
+**Every delivery meets this bar — a $5 task and a $1,999 build alike:**
+
+- 👁️ **Human-reviewed** — every automation is manually inspected before delivery
+- 🔄 **Free revisions** — within the tier window. No hidden fees
+- ⏱️ **On-time guarantee** — delivered by the ETA or **10% refund + priority rush**
+- 💯 **Money-back promise** — miss the delivery date on any tier → **100% refund**
+- 👑 **Flagship cover** — Premium clients get 30-day full support + performance review
+- 📝 **Written everything** — scopes, checklists, completion reports. No verbal promises
+
+### Our values — the code we never break
+
+**Discipline · Loyalty · Integrity · Growth · Freedom · Results**
+
+> Consistent and focused — even when we don't feel like it. We ride together. We do the right thing when no one is watching. We never stop raising the standard. We build life on our terms — and help you build yours. Outcomes, not just deliverables.
+
+---
+
+## 🔍 Proof-first honesty standard
+
+TRL launched with **zero customers** — and we'd rather show zero than invent a thousand:
+
+- ❌ No fabricated metrics, uptime claims, or scale figures
+- ❌ No fake testimonials, ratings, or invented client results
+- ❌ No AI claims for systems that aren't live
+- ❌ No "buy" buttons on future tiers that don't exist yet
+- ❌ No client logos that aren't clients
+- ✅ Real build status on every page (`Available` / `In development` / `Planned`)
+- ✅ Real founder, real phone number, real WhatsApp ([+92 319 0091457](https://wa.me/923190091457))
+- ✅ Building in public — progress shared openly, including the unfinished parts
+
+*If you ever catch us violating this list, that's a bug — [tell us](https://wa.me/923190091457) and we'll fix it in public.*
 
 ---
 
 ## 🔄 How working with TRL works
 
-**From audit to autopilot in 5 steps** (the 21-day path behind every engagement):
+**From audit to autopilot in 5 steps:**
 
 ```text
 1. DISCOVER →  2. DESIGN  →  3. BUILD   →  4. DEPLOY  →  5. SCALE
@@ -214,79 +330,50 @@ Services pay the bills today. **The OS is the destination** — one ecosystem wh
 
 ---
 
-## 🛡️ The TRL Standard
+## 🗺️ The TRL ecosystem at a glance
 
-**Every delivery meets this bar:**
+One brand. Connected layers. Each repo has one job:
 
-- 👁️ **Human-reviewed** — every automation is manually inspected before delivery
-- 🔄 **Free revisions** — within the tier window. No hidden fees
-- ⏱️ **On-time guarantee** — delivered by the ETA or **10% refund + priority rush**
-- 💯 **Money-back promise** — miss the delivery date on any tier → **100% refund**
-- 👑 **Flagship cover** — Premium clients get 30-day full support + performance review
-- 📝 **Written everything** — scopes, checklists, completion reports. No verbal promises
+| Layer | Repo | Live site | Role | Status |
+|-------|------|-----------|------|--------|
+| 🏛️ **Flagship HQ** | `TRL-TheRightLifestyle` *(this repo)* | [Live](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) | Canonical home: brand, offers, standards, roadmap | ✅ Active |
+| ⚙️ **Service Engine** | [`The-Right-Lifetsyle`](https://github.com/therightlifestyle/The-Right-Lifetsyle) | [Live](https://therightlifestyle.github.io/The-Right-Lifetsyle/) | 3-tier automation sales + order system, execution pack | ✅ Available |
+| 🧠 **OS Vision + Catalog** | [`TRL-1`](https://github.com/therightlifestyle/TRL-1) | [Live](https://therightlifestyle.github.io/TRL-1/) | 6-layer OS architecture, 23 services, Focus tool | ✅ Available |
+| 🔍 **Audit Funnel** | [`TRL-Site`](https://github.com/therightlifestyle/TRL-Site) | [Live](https://therightlifestyle.github.io/TRL-Site/) | $35 Micro Audit entry point, honesty-first pages | ✅ Available |
+| 🛎️ **Digital Services** | [`TRL-DIGITAL-SERVICES`](https://github.com/therightlifestyle/TRL-DIGITAL-SERVICES) | [Live](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/) | Filterable catalog + estimate wizard → WhatsApp | ✅ Available |
+| 🖥️ **Unified HQ (alt)** | [`TRL`](https://github.com/therightlifestyle/TRL) | [Live](https://therightlifestyle.github.io/TRL/) | Unified site + optional Node API foundation | ✅ Available |
+| 📊 **Lead Workspace** | [`TRL-OS`](https://github.com/therightlifestyle/TRL-OS) | [Live](https://therightlifestyle.github.io/TRL-OS/) | Local-first lead/pipeline workspace (Lead OS) | ✅ Available |
+| 🌱 **Phase 1 Archive** | [`TRL-WEB-PHASE-1`](https://github.com/therightlifestyle/TRL-WEB-PHASE-1) | [Live](https://therightlifestyle.github.io/TRL-WEB-PHASE-1/) | Original proof-engine site (history) | 📦 Archive |
 
-### Our values — the code we never break
-
-**Discipline · Loyalty · Integrity · Growth · Freedom · Results**
-
-> Consistent and focused — even when we don't feel like it. We ride together. We do the right thing when no one is watching. We never stop raising the standard. We build life on our terms — and help you build yours. Outcomes, not just deliverables.
-
----
-
-## 🔍 Proof-first honesty standard
-
-TRL launched with **zero customers** — and we'd rather show zero than invent a thousand:
-
-- ❌ No fabricated metrics, uptime claims, or scale figures
-- ❌ No fake testimonials, ratings, or invented client results
-- ❌ No AI claims for systems that aren't live
-- ❌ No "buy" buttons on future tiers that don't exist yet
-- ❌ No client logos that aren't clients
-- ✅ Real build status on every page (`Available` / `In development` / `Planned`)
-- ✅ Real founder, real phone number, real WhatsApp ([+92 319 0091457](https://wa.me/923190091457))
-- ✅ Building in public — progress shared openly, including the unfinished parts
-
-*If you ever catch us violating this list, that's a bug — [tell us](https://wa.me/923190091457) and we'll fix it in public.*
+> **A note on the name:** the repository slug keeps its original spelling for URL stability. The brand is — and always will be — **The Right Lifestyle**.
 
 ---
 
 ## ⚙️ Tech principles
 
-Every TRL site follows the same discipline — **fast, honest, dependency-free:**
+**Fast, honest, dependency-free:**
 
-- **Static-first** — semantic HTML5, hand-written CSS, vanilla JS. No frameworks, no build step required
+- **Static-first** — semantic HTML5, hand-written CSS, vanilla JS. No frameworks, no bundler, no build step
 - **Zero bloat** — no analytics SDKs, no ad trackers, no third-party UI libraries, no cookies
-- **Mobile-first & accessible** — responsive layouts, keyboard support, reduced-motion respect, semantic landmarks
-- **Privacy by architecture** — quote builders and tools run in-browser; WhatsApp handoff is an explicit user action. Local tools (Focus, Lead OS) never upload anything
+- **Progressive enhancement** — every page reads and converts with JavaScript disabled; JS only adds motion, filters and convenience
+- **Mobile-first & accessible** — responsive layouts, keyboard support, focus rings, ARIA states, reduced-motion respect, semantic landmarks
+- **Privacy by architecture** — the brief builder and all tools run in-browser; WhatsApp handoff is an explicit user action. Nothing is uploaded, logged or tracked
 - **Portable** — any static host works (GitHub Pages today). Open `index.html` and it runs
-- **Honest handoffs** — no fake checkouts, no phantom backends. If a server isn't live, the site says so
 
 ---
 
-## 📁 This repo: contents & roadmap
+## 🎨 Design system
 
-**Shipped** — the flagship is live on GitHub Pages at **https://therightlifestyle.github.io/TRL-TheRightLifestyle/** (no custom domain required).
+The whole visual language lives in `style.css`, driven by tokens (no preprocessor needed).
 
-**Next** (the upgrade path for this repo):
-
-- [x] 🏛️ Flagship README — mission, offers, pricing, standards, ecosystem map
-- [x] 🏠 Flagship `index.html` — one canonical landing page uniting the best sections of all repos
-- [x] 🎨 Shared design system (`style.css`) — TRL black + electric-blue identity, mobile-first
-- [x] ⚡ Interactive layer (`script.js`) — quote helper, currency toggle, smooth UX — zero dependencies
-- [x] 📄 Trust pages — `about.html`, `privacy.html`, `404.html`, `sitemap.xml`, `robots.txt`
-- [x] 🚀 GitHub Pages deploy — live on the default `github.io` URL, zero cost, zero DNS setup
-- [ ] 📊 Proof wall — first real case studies replace placeholder stats
-- [ ] 🌐 Custom domain — *only if/when a real domain is bought* (see [Deploy](#-deploy--hosting))
-
-```text
-TRL-TheRightLifestyle/          # Flagship HQ (this repo)
-├── README.md                    # ← you are here: the canonical TRL story
-├── index.html                   # Flagship landing page
-├── style.css / script.js        # Shared design system + interactions
-├── about.html / privacy.html    # Trust pages (+ 404.html)
-├── sitemap.xml / robots.txt     # SEO foundations
-└── LICENSE                      # MIT (no CNAME — default github.io hosting)
-```
+| Layer | Details |
+|-------|---------|
+| **Brand** | Deep-space dark base + electric blue → cyan gradient; violet accent; full light theme with one attribute switch |
+| **Typography** | `Sora` for display, `Instrument Sans` for body, `JetBrains Mono` for data and labels — fluid `clamp()` scale |
+| **Surfaces** | Glass cards, gradient borders, aurora background drift, masked grid, subtle noise overlay |
+| **Motion** | IntersectionObserver reveals with stagger, cursor-follow glow, card spotlights, animated counters, timeline progress, tilt interactions — all disabled under `prefers-reduced-motion` |
+| **Grid** | 12-column fluid layout, 1200px max content width, mobile-first breakpoints at 1080 / 900 / 680px |
+| **Assets** | Generated icons (192/512/maskable), a 1200×630 social cover, SVG favicon, web manifest |
 
 ---
 
@@ -298,16 +385,11 @@ The flagship is hosted **free on GitHub Pages** — no domain to buy, no DNS to 
 |---------|-------|
 | **Live URL** | https://therightlifestyle.github.io/TRL-TheRightLifestyle/ |
 | **Source** | `main` branch, `/` (root) |
-| **Custom domain** | None — `CNAME` file removed so the `github.io` URL serves directly |
+| **Custom domain** | None — the `github.io` URL serves directly |
 | **HTTPS** | Enforced (free GitHub certificate) |
 | **Rebuilds** | Automatic on every push to `main` (~1 min) |
 
-**How it works:** the repo is plain static HTML/CSS/JS, so GitHub Pages serves
-`index.html` from the repo root at the URL above. No build step, no CI, no cost.
-
-**Adding a domain later (optional):** buy a domain → add it under *Settings → Pages → Custom domain*
-→ create a `CNAME` file with that domain → point DNS (`A` records to GitHub's IPs, or a `CNAME`
-record for `www`) — then update the canonical URL, `sitemap.xml`, and `robots.txt` back to the new domain.
+**Adding a domain later (optional):** buy a domain → *Settings → Pages → Custom domain* → add the `CNAME` file → point DNS (A records to GitHub's IPs or a CNAME for `www`) → then update the canonical URL, Open Graph URLs, `sitemap.xml` and `robots.txt`.
 
 ---
 
@@ -318,11 +400,11 @@ record for `www`) — then update the canonical URL, `sitemap.xml`, and `robots.
 | I want to… | Go here |
 |------------|---------|
 | 💬 Talk to a human | [WhatsApp Rashid](https://wa.me/923190091457) (avg. reply ~1 hour) |
-| 🔍 Fix my leaks for $35 | [Micro Audit](https://therightlifestyle.github.io/TRL-Site/audit.html) |
-| 🛎️ See every service | [Service catalog](https://therightlifestyle.github.io/TRL-1/services.html) |
-| 🧮 Price my project | [Estimate wizard](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/#estimate) |
+| 🔍 Fix my leaks for $35 | [Micro Audit](https://therightlifestyle.github.io/TRL-TheRightLifestyle/pricing.html#audit) |
+| 🛎️ See every service | [Service catalog](https://therightlifestyle.github.io/TRL-TheRightLifestyle/services.html#catalog) |
+| 🧮 Price my project | [Pricing](https://therightlifestyle.github.io/TRL-TheRightLifestyle/pricing.html) |
+| 🧾 Send a proper brief | [Brief builder](https://therightlifestyle.github.io/TRL-TheRightLifestyle/contact.html#brief) |
 | 👥 Join builders | [WhatsApp community](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL) |
-| 🧘 Organize today | [TRL Focus](https://therightlifestyle.github.io/TRL-1/focus.html) (free, private) |
 
 **For developers** — run this repo locally:
 
@@ -333,6 +415,12 @@ python3 -m http.server 8080      # then open http://localhost:8080/
 # …or just open index.html in a browser. No build step. No dependencies.
 ```
 
+**Editing tips:**
+
+- Colours, spacing, radii and motion live in the token block at the top of `style.css`
+- Prices, WhatsApp links and contact details repeat across pages — change them everywhere (search for `923190091457` and the dollar figures)
+- The WhatsApp number, community link and email are used in headers, footers, CTAs and JSON-LD structured data
+
 ---
 
 ## 📊 Status: building in public
@@ -340,8 +428,9 @@ python3 -m http.server 8080      # then open http://localhost:8080/
 | Milestone | Status |
 |-----------|--------|
 | Official website + brand identity | ✅ Live |
+| Flagship redesign (8 pages, design system, motion layer) | ✅ Live |
 | AI Automation Services (3 tiers) | ✅ Available |
-| 23-service catalog + estimate wizard | ✅ Available |
+| 23-service catalog with filter + search | ✅ Available |
 | $35 Micro Audit funnel | ✅ Available |
 | Builder community | ✅ Growing — [join](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL) |
 | TRL Focus + Lead OS tools | ✅ Available |
@@ -350,20 +439,6 @@ python3 -m http.server 8080      # then open http://localhost:8080/
 | Custom domain + proof wall | ⏳ Next up |
 
 *Last updated: September 2026 · Phase 1: Foundation*
-
----
-
-## 👤 Founder
-
-**Rashid Muhammad** — Founder, TRL
-
-> *"The gap between ambition and execution is the problem worth solving."*
-
-Founder-led, start to finish: the person you talk to is the person who does the work and owns the outcome. No handoffs to juniors, no account layers. TRL runs its own pipeline on systems TRL builds — we eat our own cooking.
-
-- 📧 rashidmuhammadamir@gmail.com
-- 💬 [WhatsApp: +92 319 0091457](https://wa.me/923190091457)
-- 📸 [Instagram: @the.right.lifestyle](https://instagram.com/the.right.lifestyle)
 
 ---
 
@@ -385,7 +460,7 @@ Founder-led, start to finish: the person you talk to is the person who does the 
 
 TRL is **building in public** — early members are co-creators, not testers:
 
-1. **Use something** — try [Focus](https://therightlifestyle.github.io/TRL-1/focus.html), the [audit](https://therightlifestyle.github.io/TRL-Site/audit.html), or the [catalog](https://therightlifestyle.github.io/TRL-1/services.html)
+1. **Use something** — try the [catalog](https://therightlifestyle.github.io/TRL-TheRightLifestyle/services.html), the [$35 audit](https://therightlifestyle.github.io/TRL-TheRightLifestyle/pricing.html#audit), or the [brief builder](https://therightlifestyle.github.io/TRL-TheRightLifestyle/contact.html#brief)
 2. **Tell the truth** — open an issue or [WhatsApp us](https://wa.me/923190091457) with what worked and what didn't
 3. **Shape the roadmap** — early feedback directly decides what becomes software
 
@@ -395,13 +470,14 @@ Found a typo, a broken link, or a claim that outruns reality? That's a high-prio
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE) *(landing with the next PR alongside the flagship site)*.
+MIT — see [LICENSE](LICENSE).
 
 ---
 
 ## 🔗 Quick links
 
-- 🏛️ [Flagship HQ](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) · ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
+- 🏛️ [Flagship HQ](https://therightlifestyle.github.io/TRL-TheRightLifestyle/) · 🛎️ [Services](https://therightlifestyle.github.io/TRL-TheRightLifestyle/services.html) · 💰 [Pricing](https://therightlifestyle.github.io/TRL-TheRightLifestyle/pricing.html) · 👤 [Founder](https://therightlifestyle.github.io/TRL-TheRightLifestyle/founder.html)
+- ⚙️ [Service Engine](https://therightlifestyle.github.io/The-Right-Lifetsyle/) · 🧠 [OS + Catalog](https://therightlifestyle.github.io/TRL-1/) · 🔍 [Audit](https://therightlifestyle.github.io/TRL-Site/) · 🛎️ [Digital Services](https://therightlifestyle.github.io/TRL-DIGITAL-SERVICES/)
 - 💬 [WhatsApp](https://wa.me/923190091457) · 👥 [Community](https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL) · 📸 [Instagram](https://instagram.com/the.right.lifestyle)
 
 ---
