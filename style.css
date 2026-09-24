@@ -1196,3 +1196,112 @@ body[data-currency="pkr"] .table td.price .swap-pkr { font-size: 1em; color: var
 .max-60 { max-width: 60ch; }
 .center-block { margin-inline: auto; }
 @media (min-width: 901px) { .tier.featured { transform: translateY(-10px); } .tier.featured:hover { transform: translateY(-15px); } }
+
+
+/* ============================================================================
+   24. SERVICES OPTIMIZATION — PROBLEM FINDER & SERVICE PILLARS
+   ========================================================================== */
+.drawer[aria-hidden="true"] { pointer-events: none; }
+.drawer[aria-hidden="false"] { pointer-events: auto; }
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+.problem-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem 1.4rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: var(--card-sheen);
+  backdrop-filter: blur(10px);
+  transition: transform var(--dur-2) var(--ease), border-color var(--dur-2) var(--ease), box-shadow var(--dur-2) var(--ease);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+.problem-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-2);
+  box-shadow: var(--shadow-m);
+}
+.problem-prefix {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 0.45rem;
+}
+.problem-title {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: 1.08rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+.problem-desc {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  margin-bottom: 1rem;
+  flex: 1;
+}
+.problem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  font-weight: 650;
+  color: var(--accent);
+  margin-top: auto;
+}
+.problem-link svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--dur-2) var(--ease);
+}
+.problem-card:hover .problem-link svg {
+  transform: translateX(4px);
+}
+
+.pillar-detail {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(1.2rem, 3vw, 2.2rem);
+  align-items: start;
+}
+.pillar-card {
+  padding: clamp(1.4rem, 2.8vw, 2rem);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  background: var(--card-sheen);
+  position: relative;
+  overflow: hidden;
+}
+.pillar-box {
+  padding: 1.3rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-2);
+  background: var(--surface-2);
+  display: grid;
+  gap: 0.85rem;
+}
+.pillar-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+@media (max-width: 900px) {
+  .problem-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pillar-detail { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .problem-grid { grid-template-columns: 1fr; }
+}
