@@ -96,3 +96,9 @@ python3 -m http.server 8080
 ## License
 
 MIT License — see [LICENSE](LICENSE).
+
+## SEO tooling
+
+- `python3 tools/seo.py build`: regenerates FAQPage structured data from the visible FAQs and inserts search-engine verification tags from `tools/seo.config.json`.
+- `python3 tools/seo.py check`: validates canonicals, og:url, sitemap, robots, entity naming and JSON-LD. It runs in CI on every push.
+- Search Console, Bing and brand-authority setup: see [`docs/PHASE-2-SEARCH-SETUP.md`](docs/PHASE-2-SEARCH-SETUP.md).

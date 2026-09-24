@@ -1,0 +1,14 @@
+# The Right Lifestyle (TRL)
+
+> The Right Lifestyle (TRL) is a founder-led AI systems company based in Rawalpindi, Pakistan, led by Rashid Muhammad. TRL builds custom AI automation, AI agents, workflow integrations, lead response systems and business operating systems for businesses worldwide. Not related to the "TRL" (Transformer Reinforcement Learning) machine-learning library.
+
+## Pages
+- [Home](https://therightlifestyle.github.io/TRL-TheRightLifestyle/): overview of TRL and how to start
+- [Services](https://therightlifestyle.github.io/TRL-TheRightLifestyle/services.html): six service pillars with examples and starting points
+- [How it works](https://therightlifestyle.github.io/TRL-TheRightLifestyle/how.html): delivery process and guarantee
+- [Pricing](https://therightlifestyle.github.io/TRL-TheRightLifestyle/pricing.html): Workflow Audit ($35), Starter Build ($299), Growth OS ($799), Premium Scale ($1,999)
+- [About](https://therightlifestyle.github.io/TRL-TheRightLifestyle/about.html): founder and company background
+- [Contact](https://therightlifestyle.github.io/TRL-TheRightLifestyle/contact.html): WhatsApp +92 319 0091457, officialtrlservice@gmail.com
+
+## Optional
+- [Privacy](https://therightlifestyle.github.io/TRL-TheRightLifestyle/privacy.html)
